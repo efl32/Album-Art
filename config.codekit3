@@ -49,6 +49,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
+		"oF": 0
+		},
 	"/dev/homepage.kit": {
 		"cB": 0,
 		"ft": 2048,
