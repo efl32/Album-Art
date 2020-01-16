@@ -20,7 +20,26 @@
     
     <section id="homepage">
             <ul id="1to4">
-                <li><img src="" alt=""></li>
+                <li>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>
+                                #3 - Modal window
+                            </p>
+        
+                            <p class="mb-0">
+                                <a data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;" class="btn btn-primary">Open demo</a>
+                            </p>
+        
+                            <div style="display: none;max-width:100%;" id="trueModal">
+                                <p><button data-fancybox-close class="btn">Close me</button></p>
+                                <h2>I'm a modal!</h2>
+                                <p>You can close me only by pressing custom button below.</p>
+                                <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li><img src="" alt=""></li>
                 <li><img src="" alt=""></li>
                 <li><img src="" alt=""></li>
@@ -117,7 +136,10 @@
             </ul>
         </section>
         
-
+    <div id = "page1">
+            
+            </div>
+            
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -127,6 +149,10 @@
     <script src="js/scripts-min.js"></script>
 
     <script src="js/gsap.min.js"></script>
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
