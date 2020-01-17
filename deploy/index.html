@@ -21,21 +21,19 @@
     <section id="homepage">
             <ul id="1to4">
                 <li>
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="AlbumOne">
+                        <div class="AlbumOneInfo">
                             <p>
-                                #3 - Modal window
-                            </p>
-        
-                            <p class="mb-0">
-                                <a data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;" class="btn btn-primary">Open demo</a>
+                                <a data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;" class="buttonOne">
+                                    <img class="AlbumOne" src="img/0b317c-20130929-arctic-monkeys-am-album-cover-art.jpg" alt="ArticMonkeys">
+                                </a>
                             </p>
         
                             <div style="display: none;max-width:100%;" id="trueModal">
-                                <p><button data-fancybox-close class="btn">Close me</button></p>
-                                <h2>I'm a modal!</h2>
-                                <p>You can close me only by pressing custom button below.</p>
-                                <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
+                                <button data-fancybox-close class="closeButton">
+                                    <i class="fas fa-times-circle"></i>
+                                </button>
+        
                             </div>
                         </div>
                     </div>

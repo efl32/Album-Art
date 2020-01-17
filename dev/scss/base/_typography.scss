@@ -5,3 +5,13 @@ h1,h2,h3,h4,h5,p{
     padding: 0;
     margin: 0;
 }
+
+h1{
+    font-family: "Nunito";
+    text-align:center;
+    font-size: rem-calc(60);
+    font-weight: 400;
+}
+p{
+    font-family: "Noto Sans"
+}
