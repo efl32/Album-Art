@@ -13,10 +13,15 @@ ul{
         list-style: none;
     }
 }
-
-button{
-    border: 0;
-    padding: 0;
-    margin: 0;
-    outline: none;
+.icons{
+    font-size: rem-calc(50);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.coverImage{
+    display: inline-block;
+    width: 100%;
 }

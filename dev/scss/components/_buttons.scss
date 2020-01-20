@@ -1,3 +1,20 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.closeButton{
+    font-size: rem-calc(50);
+    transition: .5s;
+    border-radius: 300px;
+}
+
+.closeButton:hover{
+    background-color: $white;
+    color: $red;
+}

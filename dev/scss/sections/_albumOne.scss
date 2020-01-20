@@ -1,0 +1,16 @@
+#homepage{
+    #albumOne{
+        #trueModal{
+            text-align: center;
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas:
+            ". cover ."
+            ". icons ."
+            ". title ."
+            ". info ."
+            ". video .";
+
+        }
+    }
+}

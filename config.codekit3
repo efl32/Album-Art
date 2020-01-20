@@ -469,14 +469,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/page1.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/page1.html",
-		"oF": 0
-		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -603,6 +595,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/layout/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_albumOne.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_albumOne.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

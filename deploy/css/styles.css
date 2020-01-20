@@ -321,11 +321,17 @@ ul {
   ul li {
     list-style: none; }
 
-button {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  outline: none; }
+.icons {
+  font-size: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.coverImage {
+  display: inline-block;
+  width: 100%; }
 
 /* =============
     Typography
@@ -346,6 +352,21 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none; }
+
+.closeButton {
+  font-size: 3.125rem;
+  transition: .5s;
+  border-radius: 300px; }
+
+.closeButton:hover {
+  background-color: #fff;
+  color: #ba0909; }
+
 /* =============
     Forms
 ============= */
@@ -376,202 +397,22 @@ header h1 {
 /* =============
     Homepage
 ============= */
-section {
+#homepage {
   display: grid;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-areas: "1a 1b 1c 1d" "2a 2b 2c 2d" "3a 3b 3c 3d" "4a 4b 4c 4d" "5a 5b 5c 5d" "6a 6b 6c 6d" "7a 7b 7c 7d" "8a 8b 8c 8d" "9a 9b 9c 9d" "10a 10b 10c 10d" "11a 11b 11c 11d" "12a 12b 12c 12d" "13a 13b 13c 13d" "14a 14b 14c 14d" "15a 15b 15c 15d" "16a 16b 16c 16d"; }
-  @media (min-width: 1024px) {
-    section {
-      grid-template-areas: "1a 1b 1c 1d 2a 2b" "2c 2d 3a 3b 3c 3d" "4a 4b 4c 4d 5a 5b" "5c 5d 6a 6b 6c 6d" "7a 7b 7c 7d 8a 8b" "8c 8d 9a 9b 9c 9d" "10a 10b 10c 10d 11a 11b" "11c 11d 12a 12b 12c 12d" "13a 13b 13c 13d 14a 14b" "14c 14d 15a 15b 15c 15d" "16a 16b 16c 16d"; } }
-
-#homepage ul:nth-child(1) li:nth-child(1) {
-  grid-area: 1a; }
-
-#homepage ul:nth-child(1) li:nth-child(2) {
-  grid-area: 1b; }
-
-#homepage ul:nth-child(1) li:nth-child(3) {
-  grid-area: 1c; }
-
-#homepage ul:nth-child(1) li:nth-child(4) {
-  grid-area: 1d; }
-
-#homepage ul:nth-child(2) li:nth-child(1) {
-  grid-area: 2a; }
-
-#homepage ul:nth-child(2) li:nth-child(2) {
-  grid-area: 2b; }
-
-#homepage ul:nth-child(2) li:nth-child(3) {
-  grid-area: 2c; }
-
-#homepage ul:nth-child(2) li:nth-child(4) {
-  grid-area: 2d; }
-
-#homepage ul:nth-child(3) li:nth-child(1) {
-  grid-area: 3a; }
-
-#homepage ul:nth-child(3) li:nth-child(2) {
-  grid-area: 3b; }
-
-#homepage ul:nth-child(3) li:nth-child(3) {
-  grid-area: 3c; }
-
-#homepage ul:nth-child(3) li:nth-child(4) {
-  grid-area: 3d; }
-
-#homepage ul:nth-child(4) li:nth-child(1) {
-  grid-area: 4a; }
-
-#homepage ul:nth-child(4) li:nth-child(2) {
-  grid-area: 4b; }
-
-#homepage ul:nth-child(4) li:nth-child(3) {
-  grid-area: 4c; }
-
-#homepage ul:nth-child(4) li:nth-child(4) {
-  grid-area: 4d; }
-
-#homepage ul:nth-child(5) li:nth-child(1) {
-  grid-area: 5a; }
-
-#homepage ul:nth-child(5) li:nth-child(2) {
-  grid-area: 5b; }
-
-#homepage ul:nth-child(5) li:nth-child(3) {
-  grid-area: 5c; }
-
-#homepage ul:nth-child(5) li:nth-child(4) {
-  grid-area: 5d; }
-
-#homepage ul:nth-child(6) li:nth-child(1) {
-  grid-area: 6a; }
-
-#homepage ul:nth-child(6) li:nth-child(2) {
-  grid-area: 6b; }
-
-#homepage ul:nth-child(6) li:nth-child(3) {
-  grid-area: 6c; }
-
-#homepage ul:nth-child(6) li:nth-child(4) {
-  grid-area: 6d; }
-
-#homepage ul:nth-child(7) li:nth-child(1) {
-  grid-area: 7a; }
-
-#homepage ul:nth-child(7) li:nth-child(2) {
-  grid-area: 7b; }
-
-#homepage ul:nth-child(7) li:nth-child(3) {
-  grid-area: 7c; }
-
-#homepage ul:nth-child(7) li:nth-child(4) {
-  grid-area: 7d; }
-
-#homepage ul:nth-child(8) li:nth-child(1) {
-  grid-area: 8a; }
-
-#homepage ul:nth-child(8) li:nth-child(2) {
-  grid-area: 8b; }
-
-#homepage ul:nth-child(8) li:nth-child(3) {
-  grid-area: 8c; }
-
-#homepage ul:nth-child(8) li:nth-child(4) {
-  grid-area: 8d; }
-
-#homepage ul:nth-child(9) li:nth-child(1) {
-  grid-area: 9a; }
-
-#homepage ul:nth-child(9) li:nth-child(2) {
-  grid-area: 9b; }
-
-#homepage ul:nth-child(9) li:nth-child(3) {
-  grid-area: 9c; }
-
-#homepage ul:nth-child(9) li:nth-child(4) {
-  grid-area: 9d; }
-
-#homepage ul:nth-child(10) li:nth-child(1) {
-  grid-area: 10a; }
-
-#homepage ul:nth-child(10) li:nth-child(2) {
-  grid-area: 10b; }
-
-#homepage ul:nth-child(10) li:nth-child(3) {
-  grid-area: 10c; }
-
-#homepage ul:nth-child(10) li:nth-child(4) {
-  grid-area: 10d; }
-
-#homepage ul:nth-child(11) li:nth-child(1) {
-  grid-area: 11a; }
-
-#homepage ul:nth-child(11) li:nth-child(2) {
-  grid-area: 11b; }
-
-#homepage ul:nth-child(11) li:nth-child(3) {
-  grid-area: 11c; }
-
-#homepage ul:nth-child(11) li:nth-child(4) {
-  grid-area: 11d; }
-
-#homepage ul:nth-child(12) li:nth-child(1) {
-  grid-area: 12a; }
-
-#homepage ul:nth-child(12) li:nth-child(2) {
-  grid-area: 12b; }
-
-#homepage ul:nth-child(12) li:nth-child(3) {
-  grid-area: 12c; }
-
-#homepage ul:nth-child(12) li:nth-child(4) {
-  grid-area: 12d; }
-
-#homepage ul:nth-child(13) li:nth-child(1) {
-  grid-area: 13a; }
-
-#homepage ul:nth-child(13) li:nth-child(2) {
-  grid-area: 13b; }
-
-#homepage ul:nth-child(13) li:nth-child(3) {
-  grid-area: 13c; }
-
-#homepage ul:nth-child(13) li:nth-child(4) {
-  grid-area: 13d; }
-
-#homepage ul:nth-child(14) li:nth-child(1) {
-  grid-area: 14a; }
-
-#homepage ul:nth-child(14) li:nth-child(2) {
-  grid-area: 14b; }
-
-#homepage ul:nth-child(14) li:nth-child(3) {
-  grid-area: 14c; }
-
-#homepage ul:nth-child(14) li:nth-child(4) {
-  grid-area: 14d; }
-
-#homepage ul:nth-child(15) li:nth-child(1) {
-  grid-area: 15a; }
-
-#homepage ul:nth-child(15) li:nth-child(2) {
-  grid-area: 15b; }
-
-#homepage ul:nth-child(15) li:nth-child(3) {
-  grid-area: 15c; }
-
-#homepage ul:nth-child(15) li:nth-child(4) {
-  grid-area: 15d; }
-
-#homepage ul:nth-child(16) li:nth-child(1) {
-  grid-area: 16a; }
-
-#homepage ul:nth-child(16) li:nth-child(2) {
-  grid-area: 16b; }
-
-#homepage ul:nth-child(16) li:nth-child(3) {
-  grid-area: 16c; }
-
-#homepage ul:nth-child(16) li:nth-child(4) {
-  grid-area: 16d; }
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "1a 1b 1c 1d" "2a 2b 2c 2d" "3a 3b 3c 3d" "4a 4b 4c 4d"; }
+  #homepage #albumCoverOne {
+    grid-area: 1a;
+    width: 100%; }
+  #homepage #albumTwo {
+    grid-area: 1b; }
+  #homepage #albumThree {
+    grid-area: 1c; }
+  #homepage #albumFour {
+    grid-area: 1d; }
+
+#homepage #albumOne #trueModal {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". cover ." ". icons ." ". title ." ". info ." ". video ."; }
