@@ -321,51 +321,6 @@ ul {
   ul li {
     list-style: none; }
 
-.coverImage {
-  position: relative; }
-  .coverImage img {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .2s; }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .2s;
-  background-color: #000;
-  text-align: center; }
-  .overlay p {
-    color: #fff;
-    padding: 20px;
-    font-size: 1.25rem; }
-
-.text {
-  margin-top: 18%; }
-
-.divider {
-  border: 1px solid #fff;
-  margin-left: 30%;
-  margin-right: 30%; }
-
-.coverImage:hover .overlay {
-  opacity: .65;
-  transform: scale(1.15); }
-  .coverImage:hover .overlay p {
-    opacity: 1; }
-
-.coverImage:hover img {
-  filter: blur(15px);
-  -webkit-filter: blur(3px);
-  transition: .2s;
-  transform: scale(1.15); }
-
 /* =============
     Typography
 ============= */
@@ -528,11 +483,78 @@ header h1 {
       #homepage #albumEighteen {
         display: none; } }
 
+.coverImage {
+  position: relative; }
+  .coverImage img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s;
+  background-color: #000;
+  text-align: center; }
+  .overlay p {
+    color: #fff;
+    padding: 20px;
+    font-size: 1.25rem; }
+
+.text {
+  margin-top: 18%; }
+
+.divider {
+  border: 1px solid #fff;
+  margin-left: 30%;
+  margin-right: 30%; }
+
+.coverImage:hover .overlay {
+  opacity: .65;
+  transform: scale(1.15); }
+  .coverImage:hover .overlay p {
+    opacity: 1; }
+
+.coverImage:hover img {
+  filter: blur(15px);
+  -webkit-filter: blur(3px);
+  transition: .2s;
+  transform: scale(1.15); }
+
 .albumInfo {
+  max-width: 1200px;
   text-align: center;
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". infoImg ." ". icons ." ". title ." ". info ." ". video ."; }
+  grid-template-areas: ". infoImg ." ". icons ." ". title ." ". info ." ". tracklist ." ". video ."; }
+  @media (min-width: 768px) {
+    .albumInfo {
+      margin-left: 5%;
+      margin-right: 5%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+      grid-template-areas: "infoImg title" "infoImg icons" "info tracklist"; } }
+  @media (min-width: 1024px) {
+    .albumInfo {
+      margin-left: 15%;
+      margin-right: 15%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+      grid-template-areas: "infoImg infoImg title" "infoImg infoImg icons" "tracklist info info"; } }
+  @media (min-width: 1200px) {
+    .albumInfo {
+      margin-left: 20%;
+      margin-right: 20%;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 40px;
+      grid-template-areas: "title title title infoImg infoImg infoImg" "icons icons icons infoImg infoImg infoImg" "info info info info tracklist tracklist"; } }
 
 .infoImg {
   grid-area: infoImg;
@@ -551,22 +573,32 @@ header h1 {
   margin-right: 25%;
   margin-top: 20px;
   bottom: 20px; }
-  .icons i:nth-child(1) {
+  .icons a:nth-child(1) {
     color: #1DB954; }
-  .icons i:nth-child(2) {
+  .icons a:nth-child(2) {
     color: #ff7700; }
 
 .title {
   grid-area: title;
-  padding-top: 20px;
-  padding-bottom: 40px; }
-  .title p {
-    text-align: center;
-    font-size: 2.5rem;
-    line-height: 3.125rem; }
+  padding-top: 20px; }
+  @media (min-width: 768px) {
+    .title {
+      padding-top: 20%; } }
 
 .info {
   grid-area: info;
   text-align: left; }
+  .info h2 {
+    margin-bottom: 10px;
+    margin-top: 30px; }
   .info p {
+    line-height: 1.375rem; }
+
+.tracklist {
+  grid-area: tracklist;
+  text-align: left; }
+  .tracklist h2 {
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .tracklist p {
     line-height: 1.375rem; }

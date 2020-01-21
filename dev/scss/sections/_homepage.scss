@@ -3,6 +3,7 @@
 ============= */
 
 #homepage{
+    // main page with differing responsive grid layouts
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -77,6 +78,7 @@
         // "m n o p q r"
     }
 
+    // assigning grid areas
     #albumOne{
         grid-area: a;
         width: 100%;
@@ -166,5 +168,66 @@
         @include xl{
             display: none;
         }
+    }
+}
+
+//main page album cover styling
+.coverImage{
+    position: relative;
+    img{
+        display: block;
+        width: 100%;
+        height:auto;
+        transition: .2s;
+    }
+}
+
+//album cover overlay positioning and styling
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s;
+    background-color: $black;
+    text-align: center;
+    p{
+        color: $white;
+        padding: 20px;
+        font-size: rem-calc(20);
+    }
+}
+
+//vertically aligning the overlay text
+.text{
+    margin-top: 18%;
+}
+
+.divider{
+    border: 1px solid $white;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+//cover overlay hover effects
+.coverImage:hover .overlay{
+    opacity: .65;
+    transform: scale(1.15);
+    p{
+        opacity: 1;
+    }
+}
+
+//cover image blur and scale hover effects
+.coverImage:hover{
+    img{
+        filter: blur(15px);
+        -webkit-filter: blur(3px);
+        transition: .2s;
+        transform: scale(1.15);
     }
 }

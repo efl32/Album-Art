@@ -1,4 +1,6 @@
 .albumInfo{
+    //hidden elemnt differing responsive grid layouts
+    max-width: 1200px;
     text-align: center;
     display: grid;
     grid-template-columns: 10px auto 10px;
@@ -7,9 +9,41 @@
     ". icons ."
     ". title ."
     ". info ."
+    ". tracklist ."
     ". video .";
-
+    @include md{
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        grid-template-areas:
+        "infoImg title"
+        "infoImg icons"
+        "info tracklist";
+    }
+    @include lg{
+        margin-left: 15%;
+        margin-right: 15%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        grid-template-areas:
+        "infoImg infoImg title"
+        "infoImg infoImg icons"
+        "tracklist info info";
+    }
+    @include xl{
+        margin-left: 20%;
+        margin-right: 20%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 40px;
+        grid-template-areas:
+        "title title title infoImg infoImg infoImg"
+        "icons icons icons infoImg infoImg infoImg"
+        "info info info info tracklist tracklist";
+    }
 }
+
+//album cover styling
 .infoImg{
     grid-area: infoImg;
     display: block;
@@ -18,6 +52,8 @@
     width: 100%;
     border-radius: 50px;
 }
+
+//icon styling
 .icons{
     grid-area: icons;
     font-size: rem-calc(40);
@@ -27,26 +63,43 @@
     margin-right: 25%;
     margin-top: 20px;
     bottom: 20px;
-    i:nth-child(1){
+    a:nth-child(1){
         color: $spotify;
     }
-    i:nth-child(2){
+    a:nth-child(2){
         color: $soundcloud;
     }
 }
+
+// title styling
 .title{
     grid-area: title;
     padding-top: 20px;
-    padding-bottom: 40px;
-    p{
-        text-align: center;
-        font-size: rem-calc(40);
-        line-height: rem-calc(50);
+    @include md{
+        padding-top: 20%;
     }
 }
+//background styling
 .info{
     grid-area: info;
     text-align: left;
+    h2{
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    p{
+        line-height: rem-calc(22);
+    }
+}
+
+//tracklist styling
+.tracklist{
+    grid-area: tracklist;
+    text-align: left;
+    h2{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
     p{
         line-height: rem-calc(22);
     }
