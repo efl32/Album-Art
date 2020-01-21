@@ -330,8 +330,53 @@ ul {
   margin-right: 20%; }
 
 .coverImage {
-  display: inline-block;
-  width: 100%; }
+  position: relative; }
+  .coverImage img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s;
+  background-color: #000;
+  text-align: center; }
+  .overlay .text {
+    display: block;
+    vertical-align: middle; }
+  .overlay p {
+    color: #fff;
+    padding: 20px;
+    font-size: 1.25rem; }
+
+.divider {
+  border: 1px solid #fff;
+  margin-left: 30%;
+  margin-right: 30%; }
+
+.coverImage:hover .overlay {
+  opacity: .65;
+  transform: scale(1.15); }
+
+.coverImage:hover img {
+  filter: blur(15px);
+  -webkit-filter: blur(3px);
+  transition: .5s;
+  transform: scale(1.15);
+  z-index: 4400 !important; }
+
+.infoImg {
+  display: block;
+  width: 50%;
+  top: 8%;
+  left: 8%; }
 
 /* =============
     Typography
@@ -347,7 +392,7 @@ h1 {
   font-weight: 400; }
 
 p {
-  font-family: "Noto Sans"; }
+  font-family: "Roboto Condensed"; }
 
 /* =============
     Buttons
@@ -359,12 +404,17 @@ button {
   outline: none; }
 
 .closeButton {
+  color: #fff;
   font-size: 3.125rem;
   transition: .5s;
-  border-radius: 300px; }
+  border-radius: 300px;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  background-color: transparent;
+  z-index: 50; }
 
 .closeButton:hover {
-  background-color: #fff;
   color: #ba0909; }
 
 /* =============
@@ -400,16 +450,19 @@ header h1 {
 #homepage {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas: "1a 1b 1c 1d" "2a 2b 2c 2d" "3a 3b 3c 3d" "4a 4b 4c 4d"; }
-  #homepage #albumCoverOne {
+  grid-template-areas: "1a 1a 1a 1b" "1a 1a 1a 1c" "1a 1a 1a 1d" "4a 4b 4c 4d"; }
+  #homepage #albumOne {
     grid-area: 1a;
     width: 100%; }
   #homepage #albumTwo {
-    grid-area: 1b; }
+    grid-area: 1b;
+    width: 100%; }
   #homepage #albumThree {
-    grid-area: 1c; }
+    grid-area: 1c;
+    width: 100%; }
   #homepage #albumFour {
-    grid-area: 1d; }
+    grid-area: 1d;
+    width: 100%; }
 
 #homepage #albumOne #trueModal {
   text-align: center;

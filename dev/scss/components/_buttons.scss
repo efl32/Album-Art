@@ -9,12 +9,17 @@ button{
     outline: none;
 }
 .closeButton{
+    color: $white;
     font-size: rem-calc(50);
     transition: .5s;
     border-radius: 300px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    background-color: transparent;
+    z-index: 50;
 }
 
 .closeButton:hover{
-    background-color: $white;
     color: $red;
 }
