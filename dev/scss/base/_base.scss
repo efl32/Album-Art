@@ -20,13 +20,21 @@ ul{
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    i:nth-child(1){
+        color: $spotify;
+    }
+    i:nth-child(2){
+        color: $soundcloud;
+    }
 }
+
 .coverImage{
     position: relative;
     img{
         display: block;
         width: 100%;
         height:auto;
+        transition: .2s;
     }
 }
 .overlay{
@@ -38,18 +46,17 @@ ul{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s;
+    transition: .2s;
     background-color: $black;
     text-align: center;
-    .text{
-        display: block;
-        vertical-align: middle;
-    }
     p{
         color: $white;
         padding: 20px;
         font-size: rem-calc(20);
     }
+}
+.text{
+    margin-top: 18%;
 }
 .divider{
     border: 1px solid $white;
@@ -59,19 +66,19 @@ ul{
 .coverImage:hover .overlay{
     opacity: .65;
     transform: scale(1.15);
+    p{
+        opacity: 1;
+    }
 }
 .coverImage:hover{
     img{
         filter: blur(15px);
         -webkit-filter: blur(3px);
-        transition: .5s;
+        transition: .2s;
         transform: scale(1.15);
-        z-index: 4400 !important;
     }
 }
 .infoImg{
     display: block;
     width: 50%;
-    top:8%;
-    left: 8%;
 }
