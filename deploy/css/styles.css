@@ -321,18 +321,6 @@ ul {
   ul li {
     list-style: none; }
 
-.icons {
-  font-size: 3.125rem;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-left: 20%;
-  margin-right: 20%; }
-  .icons i:nth-child(1) {
-    color: #1DB954; }
-  .icons i:nth-child(2) {
-    color: #ff7700; }
-
 .coverImage {
   position: relative; }
   .coverImage img {
@@ -378,10 +366,6 @@ ul {
   transition: .2s;
   transform: scale(1.15); }
 
-.infoImg {
-  display: block;
-  width: 50%; }
-
 /* =============
     Typography
 ============= */
@@ -394,6 +378,11 @@ h1 {
   text-align: center;
   font-size: 3.75rem;
   font-weight: 400; }
+
+h2 {
+  font-family: "Roboto Condensed";
+  font-size: 1.5625rem;
+  font-weight: 200; }
 
 p {
   font-family: "Roboto Condensed"; }
@@ -408,15 +397,14 @@ button {
   outline: none; }
 
 .closeButton {
-  color: #fff;
-  font-size: 3.125rem;
+  color: #000;
+  font-size: 2.5rem;
   transition: .2s;
   border-radius: 300px;
   position: fixed;
   top: 2%;
   left: 2%;
-  background-color: transparent;
-  z-index: 50; }
+  background-color: transparent; }
 
 .closeButton:hover {
   color: #ba0909; }
@@ -454,46 +442,131 @@ header h1 {
 #homepage {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "1a 1b" "2a 2b" "3a 3b" "4a 4b" "5a 5b" "6a 6b" "7a 7b" "8a 8b" "9a 9b" "10a 10b" "11a 11b" "12a 12b" "13a 13b" "14a 14b" "15a 15b"; }
+  grid-template-areas: "a b" "c d" "e f" "g h" "i j" "k l" "m n" "o p" "q r"; }
   @media (min-width: 576px) {
     #homepage {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: "1a 1b 2a" "2b 3a 3b" "4a 4b 5a" "5b 6a 6b" "7a 7b 8a" "8b 9a 9b" "10a 10b 11a" "11b 12a 12b" "13a 13b 14a" "14b 15a 15b"; } }
+      grid-template-areas: "a a b" "a a c" "d e f" "g g g" "g g g" "g g g" "h i i" "j i i" "k l m" "n n o" "n n p" "q q q" "q q q" "q q q"; } }
   @media (min-width: 768px) {
     #homepage {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "1a 1b 2a 2b" "3a 3b 4a 4b" "5a 5b 6a 6b" "7a 7b 8a 8b" "9a 9b 10a 10b" "11a 11b 12a 12b" "13a 13b 14a 14b" "15a 15b"; } }
+      grid-template-areas: "a c c c" "b c c c" "d c c c" "e e f g" "e e h i" "j j j k" "j j j l" "j j j m" "n o o p" "q o o r"; } }
   @media (min-width: 1200px) {
     #homepage {
       grid-template-columns: repeat(6, 1fr);
-      grid-template-areas: "1a 1b 2a 2b 3a 3b" "4a 4b 5a 5b 6a 6b" "7a 7b 8a 8b 9a 9b" "10a 10b 11a 11b 12a 12b" "13a 13b 14a 14b 15a 15b"; } }
+      grid-template-areas: "a a a b c c" "a a a d c c" "a a a e e f" "h h g e e j" "h h i n n n" "k l l n n n" "m l l n n n"; } }
   #homepage #albumOne {
-    grid-area: 1a;
+    grid-area: a;
     width: 100%; }
   #homepage #albumTwo {
-    grid-area: 1b;
+    grid-area: b;
     width: 100%; }
   #homepage #albumThree {
-    grid-area: 1c;
+    grid-area: c;
     width: 100%; }
   #homepage #albumFour {
-    grid-area: 1d;
+    grid-area: d;
     width: 100%; }
-  @media (min-width: 768px) {
-    #homepage #albumSeventeen {
-      display: none; } }
-  @media (min-width: 1200px) {
-    #homepage #albumSeventeen {
-      display: block; } }
-  @media (min-width: 768px) {
-    #homepage #albumEighteen {
-      display: none; } }
-  @media (min-width: 1200px) {
-    #homepage #albumEighteen {
-      display: block; } }
+  #homepage #albumFive {
+    grid-area: e;
+    width: 100%; }
+  #homepage #albumSix {
+    grid-area: f;
+    width: 100%; }
+  #homepage #albumSeven {
+    grid-area: g;
+    width: 100%; }
+  #homepage #albumEight {
+    grid-area: h;
+    width: 100%; }
+  #homepage #albumNine {
+    grid-area: i;
+    width: 100%; }
+  #homepage #albumTen {
+    grid-area: j;
+    width: 100%; }
+  #homepage #albumEleven {
+    grid-area: k;
+    width: 100%; }
+  #homepage #albumTwelve {
+    grid-area: l;
+    width: 100%; }
+  #homepage #albumThirteen {
+    grid-area: m;
+    width: 100%; }
+  #homepage #albumFourteen {
+    grid-area: n;
+    width: 100%; }
+  #homepage #albumFifteen {
+    grid-area: o;
+    width: 100%; }
+    @media (min-width: 1200px) {
+      #homepage #albumFifteen {
+        display: none; } }
+  #homepage #albumSixteen {
+    grid-area: p;
+    width: 100%; }
+    @media (min-width: 1200px) {
+      #homepage #albumSixteen {
+        display: none; } }
+  #homepage #albumSeventeen {
+    grid-area: q;
+    width: 100%; }
+    @media (min-width: 1200px) {
+      #homepage #albumSeventeen {
+        display: none; } }
+  #homepage #albumEighteen {
+    grid-area: r;
+    width: 100%; }
+    @media (min-width: 576px) {
+      #homepage #albumEighteen {
+        display: none; } }
+    @media (min-width: 768px) {
+      #homepage #albumEighteen {
+        display: block; } }
+    @media (min-width: 1200px) {
+      #homepage #albumEighteen {
+        display: none; } }
 
-#homepage #albumOne #trueModal {
+.albumInfo {
   text-align: center;
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". cover ." ". icons ." ". title ." ". info ." ". video ."; }
+  grid-template-areas: ". infoImg ." ". icons ." ". title ." ". info ." ". video ."; }
+
+.infoImg {
+  grid-area: infoImg;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 50px; }
+
+.icons {
+  grid-area: icons;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  bottom: 20px; }
+  .icons i:nth-child(1) {
+    color: #1DB954; }
+  .icons i:nth-child(2) {
+    color: #ff7700; }
+
+.title {
+  grid-area: title;
+  padding-top: 20px;
+  padding-bottom: 40px; }
+  .title p {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.125rem; }
+
+.info {
+  grid-area: info;
+  text-align: left; }
+  .info p {
+    line-height: 1.375rem; }

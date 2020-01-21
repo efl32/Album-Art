@@ -6,87 +6,165 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "1a 1b"
-    "2a 2b"
-    "3a 3b"
-    "4a 4b"
-    "5a 5b"
-    "6a 6b"
-    "7a 7b"
-    "8a 8b"
-    "9a 9b"
-    "10a 10b"
-    "11a 11b"
-    "12a 12b"
-    "13a 13b"
-    "14a 14b"
-    "15a 15b";
+    "a b"
+    "c d"
+    "e f"
+    "g h"
+    "i j"
+    "k l"
+    "m n"
+    "o p"
+    "q r"
+    ;
     @include sm{
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-        "1a 1b 2a"
-        "2b 3a 3b"
-        "4a 4b 5a"
-        "5b 6a 6b"
-        "7a 7b 8a"
-        "8b 9a 9b"
-        "10a 10b 11a"
-        "11b 12a 12b"
-        "13a 13b 14a"
-        "14b 15a 15b";
+        "a a b"
+        "a a c"
+        "d e f"
+        "g g g"
+        "g g g"
+        "g g g"
+        "h i i"
+        "j i i"
+        "k l m"
+        "n n o"
+        "n n p"
+        "q q q"
+        "q q q"
+        "q q q";
+
+        // "a b c"
+        // "d e f"
+        // "g h i"
+        // "j k l"
+        // "m n o"
+        // "p q r"
     }
     @include md{
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
-        "1a 1b 2a 2b"
-        "3a 3b 4a 4b"
-        "5a 5b 6a 6b"
-        "7a 7b 8a 8b"
-        "9a 9b 10a 10b"
-        "11a 11b 12a 12b"
-        "13a 13b 14a 14b"
-        "15a 15b";
+        "a c c c"
+        "b c c c"
+        "d c c c"
+        "e e f g"
+        "e e h i"
+        "j j j k"
+        "j j j l"
+        "j j j m"
+        "n o o p"
+        "q o o r";
+
+        // "a b c d"
+        // "e f g h"
+        // "i j k l"
+        // "m n o p"
+        // "q r"
     }
     @include xl{
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
-        "1a 1b 2a 2b 3a 3b"
-        "4a 4b 5a 5b 6a 6b"
-        "7a 7b 8a 8b 9a 9b"
-        "10a 10b 11a 11b 12a 12b"
-        "13a 13b 14a 14b 15a 15b";
+        "a a a b c c"
+        "a a a d c c"
+        "a a a e e f"
+        "h h g e e j"
+        "h h i n n n"
+        "k l l n n n"
+        "m l l n n n";
+
+        // "a b c d e f"
+        // "g h i j k l"
+        // "m n o p q r"
     }
 
     #albumOne{
-        grid-area: 1a;
+        grid-area: a;
         width: 100%;
     }
     #albumTwo{
-        grid-area: 1b;
+        grid-area: b;
         width: 100%;
     }
     #albumThree{
-        grid-area: 1c;
+        grid-area: c;
         width: 100%;
     }
     #albumFour{
-        grid-area: 1d;
+        grid-area: d;
         width: 100%;
     }
-    #albumSeventeen{
-        @include md{
+    #albumFive{
+        grid-area: e;
+        width: 100%;
+    }
+    #albumSix{
+        grid-area: f;
+        width: 100%;
+    }
+    #albumSeven{
+        grid-area: g;
+        width: 100%;
+    }
+    #albumEight{
+        grid-area: h;
+        width: 100%;
+    }
+    #albumNine{
+        grid-area: i;
+        width: 100%;
+    }
+    #albumTen{
+        grid-area: j;
+        width: 100%;
+    }
+    #albumEleven{
+        grid-area: k;
+        width: 100%;
+    }
+    #albumTwelve{
+        grid-area: l;
+        width: 100%;
+    }
+    #albumThirteen{
+        grid-area: m;
+        width: 100%;
+    }
+    #albumFourteen{
+        grid-area: n;
+        width: 100%;
+    }
+    #albumFifteen{
+        grid-area: o;
+        width: 100%;
+        @include xl{
             display: none;
         }
+    }
+    #albumSixteen{
+        grid-area: p;
+        width: 100%;
         @include xl{
-            display: block;
+            display: none;
+        }
+    }
+    #albumSeventeen{
+        grid-area: q;
+        width: 100%;
+        @include xl{
+            display: none;
         }
     }
     #albumEighteen{
-        @include md{
+        grid-area: r;
+        width: 100%;
+        @include sm{
             display: none;
         }
-        @include xl{
+        @include md{
             display: block;
+        }
+        @include xl{
+            display: none;
         }
     }
 }

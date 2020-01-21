@@ -599,7 +599,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/_albumOne.scss": {
+	"/dev/scss/sections/_albumInfo.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -607,7 +607,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/_albumOne.css",
+		"oAP": "/dev/scss/sections/_albumInfo.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

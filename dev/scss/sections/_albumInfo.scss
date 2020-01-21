@@ -1,0 +1,53 @@
+.albumInfo{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas:
+    ". infoImg ."
+    ". icons ."
+    ". title ."
+    ". info ."
+    ". video .";
+
+}
+.infoImg{
+    grid-area: infoImg;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 50px;
+}
+.icons{
+    grid-area: icons;
+    font-size: rem-calc(40);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    bottom: 20px;
+    i:nth-child(1){
+        color: $spotify;
+    }
+    i:nth-child(2){
+        color: $soundcloud;
+    }
+}
+.title{
+    grid-area: title;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    p{
+        text-align: center;
+        font-size: rem-calc(40);
+        line-height: rem-calc(50);
+    }
+}
+.info{
+    grid-area: info;
+    text-align: left;
+    p{
+        line-height: rem-calc(22);
+    }
+}
