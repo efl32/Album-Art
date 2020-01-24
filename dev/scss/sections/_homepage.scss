@@ -204,7 +204,10 @@
 
 //vertically aligning the overlay text
 .text{
-    margin-top: 18%;
+    display:inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-top: 20%
 }
 
 .divider{
