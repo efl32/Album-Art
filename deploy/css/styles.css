@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, p {
 h1 {
   font-family: "Nunito";
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 2.75rem;
   font-weight: 400; }
 
 h2 {
@@ -385,8 +385,26 @@ textarea {
 /* =============
     Header
 ============= */
-header h1 {
-  padding: 50px; }
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  grid-template-areas: ". title burger .";
+  padding: 10px 0;
+  z-index: 100; }
+  header div:nth-child(1) {
+    grid-area: title;
+    display: flex;
+    justify-content: flex-start; }
+  header div:nth-child(2) {
+    grid-area: burger;
+    display: flex;
+    justify-content: flex-end; }
+    header div:nth-child(2) #burgerContainer svg {
+      height: 44px;
+      cursor: pointer; }
 
 /* =============
     Footer
