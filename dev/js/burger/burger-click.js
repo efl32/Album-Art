@@ -1,8 +1,9 @@
 var linesToArrow = gsap.timeline({paused: true});
 
-linesToArrow.to("#top-line", {duration: .25, rotate: -45, transformOrigin: "100%, 50%", x: -8, y: 2},"linesArrow")
-.to("#bottom-line", {duration: .25, rotate: 45, transformOrigin: "100%, 50%", x: -8, y: -2},"linesArrow")
-.to("#burgerContainer", {duration: .25, scaleX: -1}, "linesArrow");
+linesToArrow.to("#top-line", {duration: .25, y: 8},"linesArrow")
+.to("#bottom-line", {duration: .25, y: -9},"linesArrow")
+.to("#triangle", {duration: .25, alpha:1, x: 3},"linesArrow")
+.to("#burgerContainer", {duration: .25, rotate: 180}, "linesArrow");
 
 
 $("#burgerContainer").on("click", function(){
