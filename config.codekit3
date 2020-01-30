@@ -348,6 +348,22 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/navBackground.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/navBackground.html",
+		"oF": 0
+		},
+	"/dev/navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/navigation.html",
+		"oF": 0
+		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -409,6 +425,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/dev/scss/components/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/components/_navBackground.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/components/_navBackground.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

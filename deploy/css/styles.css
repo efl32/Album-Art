@@ -385,6 +385,16 @@ textarea {
 /* =============
     Navigation
 ============= */
+#navBG {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: #ba0909;
+  z-index: 10;
+  top: 7px;
+  right: 20px;
+  border-radius: 100px; }
+
 /* =============
     Header
 ============= */
