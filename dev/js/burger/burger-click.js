@@ -12,8 +12,13 @@ $("#burgerContainer").on("click", function(){
     if(canYouSeeNav === false){
         linesToArrow.play();
         canYouSeeNav = true;
+
+
+
     }else{
         linesToArrow.reverse();
+        
+
         canYouSeeNav = false;
     }
 
