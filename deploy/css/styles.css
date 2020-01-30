@@ -385,6 +385,35 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 15; }
+  nav ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    text-align: center; }
+    nav ul li a:link, nav ul li a:visited {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.875rem;
+      font-family: "Roboto Condensed"; }
+  nav ul li:hover {
+    transition: 0.25s;
+    background-color: #fff; }
+    nav ul li:hover a:link, nav ul li:hover a:visited {
+      color: #ba0909;
+      transition: 0.25s; }
+
 #navBG {
   position: fixed;
   height: 50px;
