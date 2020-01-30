@@ -321,6 +321,10 @@ ul {
   ul li {
     list-style: none; }
 
+main {
+  position: relative;
+  margin-top: -18px; }
+
 /* =============
     Typography
 ============= */
@@ -382,6 +386,41 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  position: fixed;
+  top: 0;
+  right: -65vw;
+  z-index: 20;
+  width: 65vw;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    nav {
+      width: 40vw;
+      right: -40vw; } }
+  @media (min-width: 1024px) {
+    nav {
+      width: 30vw;
+      right: -30vw; } }
+  @media (min-width: 1200px) {
+    nav {
+      width: 25vw;
+      right: -25vw; } }
+  nav ul {
+    padding: 100px 0 0 30px; }
+    nav ul li {
+      margin-bottom: 20px; }
+      nav ul li a:link, nav ul li a:visited {
+        color: #000;
+        text-decoration: none;
+        transition: 0.25s;
+        font-size: 1.875rem;
+        font-family: "Roboto Condensed"; }
+      nav ul li a:hover, nav ul li a:active {
+        color: #000;
+        text-decoration: none;
+        color: #ba0909;
+        padding-left: 40px; }
+
 /* =============
     Header
 ============= */

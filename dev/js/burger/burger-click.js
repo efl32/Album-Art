@@ -12,8 +12,16 @@ $("#burgerContainer").on("click", function(){
     if(canYouSeeNav === false){
         linesToArrow.play();
         canYouSeeNav = true;
+        gsap.to("main", {duration:0.5, x:-navWidth});
+        gsap.to("nav", {duration:0.5, x: -navWidth});
+
+
     }else{
         linesToArrow.reverse();
+        gsap.to("main", {duration:0.5, x:0});
+        gsap.to("#burgerContainer", {duration:0.5, x:0});
+        gsap.to("nav", {duration:0.5, x: 0});
+
         canYouSeeNav = false;
     }
 
