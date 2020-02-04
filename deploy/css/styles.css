@@ -399,7 +399,7 @@ nav {
     padding-bottom: 10px;
     margin: 20px;
     border-radius: 12px;
-    text-align: left; }
+    text-align: center; }
     nav ul li h1 {
       color: #fff;
       border-bottom: 2px solid #fff; }
@@ -470,7 +470,7 @@ header {
 ============= */
 #homepage {
   z-index: 50;
-  padding-top: 42px;
+  padding-top: 33px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "a b" "c d" "e f" "g h" "i j" "k l" "m n" "o p" "q r"; }

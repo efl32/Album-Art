@@ -14,7 +14,7 @@ $("#burgerContainer").on("click", function(){
         gsap.to("#homepage", {duration: 0.2, scaleX: 0, paddingTop: 0});
 
         gsap.to("nav", {duration: 0.2, scaleX: 1, delay: 0.5, display: "flex", position: "fixed"});
-        gsap.to("nav ul li", {delay: 0.4, duration: 0.2, x: -10, stagge: 0.2});
+        gsap.from("nav li", {delay: 0.4, duration: 0.5, x: 20, stagger: 0.2, alpha: 0});
 
         // gsap.to("#homepage", {duration: 0.5, x: "-50%"});
         // gsap.to("#navBGContainer", {duration: 0.5, x: "-50%"});
