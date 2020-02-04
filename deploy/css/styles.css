@@ -426,12 +426,17 @@ nav {
 
 #navBackground #navBGContainer {
   z-index: 3000;
-  border: 5px #ba0909 solid;
   top: -80px;
   right: 0; }
   #navBackground #navBGContainer svg {
     width: 90vw;
     position: fixed; }
+    #navBackground #navBGContainer svg #shadow1 {
+      box-shadow: 2px 2px 5px #ba0909; }
+    #navBackground #navBGContainer svg #shadow2 {
+      box-shadow: 2px 2px 5px #ba0909; }
+    #navBackground #navBGContainer svg #shadow3 {
+      box-shadow: 2px 2px 5px #ba0909; }
     @media (min-width: 576px) {
       #navBackground #navBGContainer svg {
         height: 90vh; } }

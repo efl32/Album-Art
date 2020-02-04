@@ -1,10 +1,18 @@
 #navBackground{
     #navBGContainer{
         z-index: 3000;
-        border: 5px $red solid;
         top: -80px;
         right: 0;
         svg{
+            #shadow1{
+                box-shadow: 2px 2px 5px $red;
+            }
+            #shadow2{
+                box-shadow: 2px 2px 5px $red;
+            }
+            #shadow3{
+                box-shadow: 2px 2px 5px $red;
+            }
             width: 90vw;
             position: fixed;
             @include sm{
