@@ -386,43 +386,55 @@ textarea {
     Navigation
 ============= */
 nav {
-  position: fixed;
   width: 100vw;
   height: 100vh;
   display: none;
-  justify-content: center;
   align-items: center;
-  z-index: 15; }
+  z-index: 25;
+  background-color: #ba0909; }
   nav ul li {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 20px;
-    border: 2px solid #fff;
     border-radius: 12px;
-    text-align: center; }
+    text-align: left; }
+    nav ul li h1 {
+      color: #fff;
+      border-bottom: 2px solid #fff; }
     nav ul li a:link, nav ul li a:visited {
       text-decoration: none;
       color: #fff;
       font-size: 1.875rem;
       font-family: "Roboto Condensed"; }
   nav ul li:hover {
-    transition: 0.25s;
-    background-color: #fff; }
+    transition: 0.25s; }
     nav ul li:hover a:link, nav ul li:hover a:visited {
       color: #ba0909;
-      transition: 0.25s; }
+      transition: 0.25s;
+      margin-left: 20%;
+      background-color: #fff;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 20px;
+      border-radius: 12px; }
+    nav ul li:hover h1 {
+      background-color: #ba0909; }
 
-#navBG {
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  background-color: #ba0909;
-  z-index: 10;
-  top: 7px;
-  right: 20px;
-  border-radius: 100px; }
+#navBackground #navBGContainer {
+  z-index: 3000;
+  border: 5px #ba0909 solid;
+  top: -80px;
+  right: 0; }
+  #navBackground #navBGContainer svg {
+    width: 90vw;
+    position: fixed; }
+    @media (min-width: 576px) {
+      #navBackground #navBGContainer svg {
+        height: 90vh; } }
 
 /* =============
     Header
@@ -457,7 +469,8 @@ header {
     Homepage
 ============= */
 #homepage {
-  padding-top: 70px;
+  z-index: 50;
+  padding-top: 42px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "a b" "c d" "e f" "g h" "i j" "k l" "m n" "o p" "q r"; }

@@ -3,8 +3,9 @@
 ============= */
 
 #homepage{
+    z-index: 50;
     // main page with differing responsive grid layouts
-    padding-top: 70px;
+    padding-top: 42px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:

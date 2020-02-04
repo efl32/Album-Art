@@ -1,8 +1,8 @@
 var canYouSeeNav = false;
 
-gsap.set("#navBG", {transformOrigin: "50% 50%"})
+gsap.set("nav", {scaleX: 0, transformOrigin: "50% 50%"});
+gsap.set("#navBGContainer", {transformOrigin: "50% 50%", x: "-10%"});
 
-// set lines to rotate over center
 gsap.set(".burgerLines", {transformOrigin: "50%, 50%"});
 
 function hideNav(){

@@ -1,10 +1,15 @@
-#navBG{
-    position: fixed;
-    height: 50px;
-    width:50px;
-    background-color: $red;
-    z-index: 10;
-    top: 7px;
-    right: 20px;
-    border-radius: 100px;
+#navBackground{
+    #navBGContainer{
+        z-index: 3000;
+        border: 5px $red solid;
+        top: -80px;
+        right: 0;
+        svg{
+            width: 90vw;
+            position: fixed;
+            @include sm{
+                height: 90vh;
+            }
+        }
+    }
 }

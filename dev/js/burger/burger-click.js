@@ -11,16 +11,22 @@ $("#burgerContainer").on("click", function(){
 
     if(canYouSeeNav === false){
         linesToArrow.play();
-        gsap.to("#navBG", { duration: 0.5, scale: 100, alpha: 0.9});
-        gsap.set("nav", { display: "flex"});
-        gsap.from("nav li",{duration:0.5, alpha:0, stagger:0.15, delay:0.25, y:50});
+        gsap.to("#homepage", {duration: 0.2, scaleX: 0, paddingTop: 0});
+
+        gsap.to("nav", {duration: 0.2, scaleX: 1, delay: 0.5, display: "flex", position: "fixed"});
+        gsap.to("nav ul li", {delay: 0.4, duration: 0.2, x: -10, stagge: 0.2});
+
+        // gsap.to("#homepage", {duration: 0.5, x: "-50%"});
+        // gsap.to("#navBGContainer", {duration: 0.5, x: "-50%"});
+        // gsap.to("#navBGContainer", {delay: 0.2, duration: 0.5, x: "10%", rotate: 360});
+
 
 
         canYouSeeNav = true;
     }else{
         linesToArrow.reverse();
-        gsap.to("#navBG",{duration:0.25, scale:1});
-        gsap.to("nav li",{duration:0.25, alpha:0, onComplete:hideNav});
+        gsap.to("#homepage",{delay: 0.2, duration:.3, scaleX:1, paddingTop: 42});
+        gsap.to("nav", {duration: 0.2, scaleX: 0, display: "none", onComplete:hideNav});
         canYouSeeNav = false;
     }
 
