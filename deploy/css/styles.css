@@ -413,7 +413,6 @@ nav {
     nav ul li:hover a:link, nav ul li:hover a:visited {
       color: #ba0909;
       transition: 0.25s;
-      margin-left: 20%;
       background-color: #fff;
       padding-left: 20px;
       padding-right: 20px;
