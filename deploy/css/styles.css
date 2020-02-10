@@ -569,7 +569,7 @@ header {
     display: block;
     width: 100%;
     height: auto;
-    transition: .2s; }
+    transition: .45s; }
 
 .overlay {
   position: absolute;
@@ -580,8 +580,8 @@ header {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .2s;
-  background-color: #000;
+  transition: .45s;
+  background-color: rgba(0, 0, 0, 0.65);
   text-align: center; }
   .overlay p {
     color: #fff;
@@ -600,15 +600,12 @@ header {
   margin-right: 30%; }
 
 .coverImage:hover .overlay {
-  opacity: .65;
-  transform: scale(1.15); }
-  .coverImage:hover .overlay p {
-    opacity: 1; }
+  opacity: 1; }
 
 .coverImage:hover img {
   filter: blur(15px);
   -webkit-filter: blur(3px);
-  transition: .2s;
+  transition: .45s;
   transform: scale(1.15); }
 
 .albumInfo {

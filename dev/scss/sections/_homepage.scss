@@ -180,7 +180,7 @@
         display: block;
         width: 100%;
         height:auto;
-        transition: .2s;
+        transition: .45s;
     }
 }
 
@@ -194,8 +194,8 @@
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .2s;
-    background-color: $black;
+    transition: .45s;
+    background-color: $overlay;
     text-align: center;
     p{
         color: $white;
@@ -220,11 +220,7 @@
 
 //cover overlay hover effects
 .coverImage:hover .overlay{
-    opacity: .65;
-    transform: scale(1.15);
-    p{
-        opacity: 1;
-    }
+    opacity: 1;
 }
 
 //cover image blur and scale hover effects
@@ -232,7 +228,7 @@
     img{
         filter: blur(15px);
         -webkit-filter: blur(3px);
-        transition: .2s;
+        transition: .45s;
         transform: scale(1.15);
     }
 }
